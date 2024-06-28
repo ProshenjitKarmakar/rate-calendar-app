@@ -10,13 +10,16 @@ import {useTheme} from '@mui/material/styles';
 import { enGB } from 'date-fns/locale';
 import {getDurationType, getFormatDataPickerDate, getFormatFromAndToDate} from "@/helpers/helper";
 
-const startDate = new Date();
+const startDate = new Date(Date.now() - 3600 * 1000 * 24 * 1);
 const endDate = new Date(Date.now() + 3600 * 1000 * 24 * 29);
 const [datePickerStartDate, datePickerEndDate] = getFormatDataPickerDate(startDate, endDate);
 
 const DateRangeController = ({datePickerCallback}: any) => {
     const [datePickerOpen, setDatePickerOpen] = useState(false);
     const theme = useTheme();
+
+    console.log("====startDate====", startDate)
+    console.log("====endDate====", endDate)
 
     const [state, setState] = useState([
         {
