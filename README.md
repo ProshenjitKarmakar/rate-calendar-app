@@ -15,4 +15,5 @@ pnpm dev
 bun dev
 ```
 
-Codesandbox link : https://codesandbox.io/p/github/ProshenjitKarmakar/rate-calendar-app/main?embed=1
+#### Codesandbox link : https://codesandbox.io/p/github/ProshenjitKarmakar/rate-calendar-app/main?embed=1 
+#### Github link : https://github.com/ProshenjitKarmakar/rate-calendar-app.git
