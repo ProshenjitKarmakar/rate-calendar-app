@@ -29,6 +29,7 @@ export const processData = (data: APIRootObject[]) : IRootObject => {
         }
 
         room.inventory_calendar.forEach((inv : InventoryCalendar, index: number) => {
+            console.log("====inv.date====", inv.date);
             obj[room.name].inventory.push({
                 date: dayjs(inv.date).format('YYYY-MM-DD'),
                 available: inv.available,

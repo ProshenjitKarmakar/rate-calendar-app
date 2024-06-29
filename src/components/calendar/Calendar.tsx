@@ -129,8 +129,8 @@ const Calendar = () => {
                                                     {onlyDates?.map((date: string) => {
                                                         const item = rows[roomName]?.inventory?.find((inv: any) => inv.date === date);
                                                         return (
-                                                            <TableCell key={date} align='right'>
-                                                                {item ? (item.status ? 'Open' : 'Close') : 'N/A'}
+                                                            <TableCell sx={item?.status ? {bgcolor: '#008000', color: '#fff'} : {bgcolor: 'red', color: '#fff'}} key={date} align='right'>
+                                                               {item ? (item.status ? 'Open' : 'Close') : 'N/A'}
                                                             </TableCell>
                                                         );
                                                     })}
